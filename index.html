@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/x-icon" href="./images/LOGO SV.jpg" />
+    <link rel="stylesheet" href="style2.css" />
+    <title>Street Vibes | Sklep internetowy</title>
+</head>
+<body>
+    <header>
+        <h1 class="header-title">
+            <span>Street</span>
+            <span>Vibes</span>
+            <!-- Dodajemy identyfikator do ostatniego spana -->
+            <span id="przyciskYt">&#x25BA;<a href="https://www.youtube.com/channel/UCpHdUNaWm6bZAIsUfyUXpKQ"></a></span>
+        </h1>
+        <div class="search-bar">
+            <input
+                type="text"
+                class="search-bar-input"
+                placeholder="Wyszukaj w sklepie..."
+                autocomplete="off"
+            />
+            <div class="search-bar-icon">
+                <img src="./images/lupa.svg" alt="search-icon" />
+            </div>
+        </div>
+        <div class="header-basket">
+            <img src="./images/shopping_cart.svg" alt="shopping-cart-icon" />
+            <p class="basket-amount">Basket</p>
+            <button class="basket-clear-btn">x</button>
+        </div>
+    </header>
+    <main class="container">
+        <aside class="categories">
+            <h1 class="categories-title">Categories</h1>
+            <section class="categories-items"></section>
+        </aside>
+        <section class="products"></section>
+        <p class="empty-state">Nie znaleziono żadnego produktu...</p>
+    </main>
+    <script>
+        // Pobierz referencję do elementu span
+        var spanPrzycisk = document.getElementById("przyciskYt");
+
+        // Dodaj obsługę zdarzenia kliknięcia
+        spanPrzycisk.addEventListener("click", function() {
+            // Przenieś użytkownika na podany link
+            window.location.href = "https://www.youtube.com/channel/UCpHdUNaWm6bZAIsUfyUXpKQ";
+        });
+    </script>
+    <script src="products.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>

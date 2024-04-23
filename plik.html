@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Login</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        #header {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+        }
+
+        #login-form-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            height: 40vh;
+            justify-content: center;
+        }
+
+        .form {
+            width: 250px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .form__input {
+            margin-bottom: 15px;
+            padding: 10px;
+            width: 100%;
+            box-sizing: border-box;
+        }
+
+        .form__button {
+            padding: 10px;
+            width: 100%;
+            box-sizing: border-box;
+        }
+
+        .form__separator {
+            margin: 10px 0;
+            text-align: center;
+        }
+
+        #signup-link,
+        #signup-link button {
+            cursor: pointer;
+            color: blue;
+            text-decoration: underline;
+            background: none;
+            border: none;
+            padding: 0;
+            font: inherit;
+            outline: none;
+        }
+
+        /* Zaktualizowano style */
+        #signup-button {
+            margin-top: 20px;
+        }
+
+        /* Dodano nowe style */
+        #signup-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 20px;
+        }
+
+        /* Dodano nowe style */
+        #buttons-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+    </style>
+</head>
+<body>
+    <div id="header">
+        <h1>StreetVibes</h1>
+    </div>
+
+    <div class="bg bg--hidden">
+        <div class="bg__dot"></div>
+        <div class="bg__dot"></div>
+    </div>
+
+    <div id="login-form-container">
+        <form class="form" id="login-form" autocomplete="off" onsubmit="auth(); return false;">
+            <!-- Proste wprowadzanie adresu email -->
+            <input
+                aria-label="Email"
+                class="form__input"
+                type="email"
+                id="email"
+                placeholder="Email"
+            />
+
+            <!-- Proste wprowadzanie nazwy użytkownika -->
+            <input
+                aria-label="User"
+                class="form__input"
+                type="text"
+                id="user"
+                placeholder="Name"
+            />
+
+            <!-- Proste wprowadzenie hasła -->
+            <input
+                aria-label="Password"
+                class="form__input"
+                type="password"
+                id="password"
+                placeholder="Password"
+            />
+			
+            <!-- Prosty przycisk logowania -->
+            <button class="form__button" type="submit">Log in</button>
+        </form>
+		
+        <!-- Przycisk "Sign Up" pod przyciskiem "WearMe" -->
+        <div id="buttons-container">
+            <button class="form__button" onclick="location.href='signup.html'">Sign up</button>
+        </div>
+    </div>
+
+    <script>
+        // Przechowywanie danych użytkowników
+        const users = {};
+
+        function auth() {
+            // Pobierz dane z formularza logowania
+            var email = document.getElementById('email').value;
+            var username = document.getElementById('user').value;
+            var password = document.getElementById('password').value;
+
+            // Sprawdź, czy użytkownik istnieje
+            if (email === 'qualnexttime@gmail.com' && username === 'Username' && password === 'Password') {
+                // Zalogowano pomyślnie - przekieruj na inną stronę (np. 'tlo1.html')
+                alert('Login Successfully');
+                window.location.href = 'index.html';
+            } else {
+                // Błąd logowania
+                alert('Nieprawidłowe dane logowania. Spróbuj ponownie.');
+            }
+        }
+    </script>
+</body>
+</html>
