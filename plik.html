@@ -144,8 +144,8 @@
             var username = document.getElementById('user').value;
             var password = document.getElementById('password').value;
 
-            // Sprawdź, czy użytkownik istnieje
-            if (email === 'qualnexttime@gmail.com' && username === 'Username' && password === 'Password') {
+            // Sprawdź, czy pola nie są puste
+            if (email !== '' && username !== '' && password !== '') {
                 // Zalogowano pomyślnie - przekieruj na inną stronę (np. 'tlo1.html')
                 alert('Login Successfully');
                 window.location.href = 'index.html';

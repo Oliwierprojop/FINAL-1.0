@@ -1,0 +1,159 @@
+Tytuł projektu: Sklep Internetowy "StreetVibes" 
+
+Cel projektu: 
+Zbudowanie podstaw strony internetowej mogącej w przyszłości posłużyć jako sklep internetowy. Użytkownik ma mieć możliwość zalogowania się lub też zarejestrowania, jeżeli nie posiada konta. Po podaniu odpowiednich danych, użytkownik zostaje przekierowany na sklep, gdzie może dodawać produkty do koszyka, sumować ich ceny oraz wyszukiwać produkty. W zakładce strony jest profesjonalnie i starannie wykonane logo firmy (niestety słabo widoczne). Strona w przyszłości może się rozwinąć, wystarczy rozbudować koszyk, dodać metodę płatności/wysyłki, opisy produktów i można otwierać sklep. Pragnę także wspomnieć, że jeżeli klient nie posiada konta na naszym sklepie - może on normalnie korzystać ze strony, natomiast bez możliwości dodawania produktów do koszyka, czyli podsumowując, brak konta = brak zakupów. 
+ 
+
+Zakres projektu: 
+
+Zakres projektu "StreetVibes" obejmuje następujące etapy i zadania: 
+
+Etap 1: Integracja z użytkownikiem, Integracja używanego środowiska 
+
+Stworzenie interfejsu użytkownika umożliwiającego logowanie się i rejestrację nowych kont. 
+
+Integracja zewnętrznych narzędzi i środowiska programistycznego, np. systemu zarządzania bazą danych. 
+
+Etap 2: Wybór i zastosowanie metod Clean Code 
+
+Wybór odpowiednich metodologii programistycznych, takich jak SOLID, DRY, itp. 
+
+Stworzenie czytelnego, zrozumiałego i łatwego do utrzymania kodu. 
+
+Etap 3: Implementacja Projektu cz.1. (Opis do czego służy) 
+
+Stworzenie podstawowej struktury strony internetowej. 
+
+Implementacja podstawowych funkcji, takich jak przeglądanie produktów, dodawanie ich do koszyka, wyświetlanie koszyka itp. 
+
+Etap 4: Testowanie aplikacji / film dokumentujący wykonany test 
+
+Przeprowadzenie testów jednostkowych, integracyjnych i akceptacyjnych. 
+
+Dokumentacja testów oraz utworzenie filmu demonstrującego testy i ich wyniki. 
+
+Etap 5: Implementacja Projektu cz.2. (Krótka prezentacja) 
+
+Rozbudowa funkcjonalności strony internetowej o dodatkowe elementy, np. filtrowanie produktów, zarządzanie kontem użytkownika itp. 
+
+Przygotowanie krótkiej prezentacji przedstawiającej nowe funkcjonalności. 
+
+Etap 6: Debugowanie kodu (wybrać debugger i wykonać) 
+
+Identyfikacja i naprawa błędów w kodzie. 
+
+Użycie odpowiednich narzędzi do debugowania, np. debuggera wbudowanego w środowisko programistyczne. 
+
+Etap 7: Implementacja FINAL – wszystkie pliki mają znaleźć się na np. Gicie (projekt ma być w 100% gotowy) 
+
+Ostateczna implementacja wszystkich funkcji i elementów strony internetowej. 
+
+Przygotowanie wszystkich plików projektu i umieszczenie ich w repozytorium, np. na platformie GitHub. 
+
+ 
+
+ 
+
+ 
+
+Harmonogram: 
+
+Etap 1: Integracja z użytkownikiem, Integracja używanego środowiska 
+
+Etap 2: Wybór i zastosowanie metod Clean Code 
+
+Etap 3: Implementacja Projektu cz.1. (Opis do czego służy) 
+
+Etap 4: Testowanie aplikacji / film dokumentujący wykonany test 
+
+Etap 5: Implementacja Projektu cz.2. (Krótka prezentacja) 
+
+Etap 6: Debugowanie kodu (wybrać debugger i wykonać) 
+
+Etap 7: Implementacja FINAL – wszystkie pliki mają znaleźć się na np. Gicie (projekt ma być w 100% gotowy) 
+
+Brak istotnych spadków wydajności strony wskazanych przez narzędzia monitorujące. 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+Ver.0.0.0 
+
+Utworzenie pierwszych plików (np. READ.me, lub plik.html) 
+
+Utworzenie konta na gicie i zaimplementowanie plików  
+
+ 
+
+Ver.0.1.0 
+
+Napisanie pierwszych podstron i kodów 
+
+Zastosowanie metod Clean Code takich jak np. KISS czy YAGNI w celu utworzenia przejrzystego, łatwego i zrozumiałego kodu 
+
+ 
+
+Ver.0.2.0 
+
+Projekt wykonany w 75% 
+
+Krótka prezentacje mające na celu opis aplikacji i jej funkcji np. do czego służy? Co robi? Jakie technologie zostały użyte, omówienie funkcjonalności interfejsu itd. 
+
+ 
+
+Ver.0.3.0 
+
+Testowanie aplikacji – w etapie tym mieliśmy przetestować aplikację, ale przed tym wybrać rodzaj testowania. Ja wybrałem testowanie za pomocą testu funkcjonalności, który pozwolił mi na dogłębne sprawdzenie 
+jak radzą sobie pojedyncze elementy, a na końcu całość. Wszystko działało bez zarzutów 
+ 
+
+Ver.0.4.0 
+
+Projekt wykonany w 55% 
+
+To samo co w etapie 3 (czytaj Ver.0.2.0), miało to na celu zrobić taką małą aktualizacje tego co się zmieniło w projekcie i jak idą postępy 
+
+ 
+
+Ver.0.6.0 
+
+Debugowanie – etap polegał na wyeliminowaniu błędów w kodzie za pomocą dowolnej metody debugowania, ja wybrałem metodę automatyczną, za pomocą przeglądarki, znalazłem 1 błąd w znakach, po poprawieniu program działał 
+bez zarzutów. Nagrany został także film, który przedstawialiśmy na lekcji. 
+
+ 
+
+ 
+
+Ver.1.0 
+
+Wersja finalna, projekt działa poprzez zalogowanie się lub też zarejestrowanie, a także poprzez kliknięcie przycisku skip w prawym dolnym rogu panelu rejestracji, wtedy jednak z ograniczeniami, jeżeli potencjalny 
+klient nie posiada konta. Po podaniu odpowiednich danych, użytkownik zostaje przekierowany na sklep, gdzie może dodawać produkty do koszyka, sumować ich ceny oraz wyszukiwać produkty (nie jeżeli nie ma konta). 
+W lewym rogu przeglądarki jest samodzielnie słabo widoczne logo, po kliknięciu w przycisk firmy “Youtube”, klient zostaje przekierowany do kanału youtube sklepu (mojego starego, bo sklep nie jest w użytku). 
+
+ 
+
+ 
+
+ 
+
+ 
+
+Dodatkowo: 
+
+Pisane były notatki na temat debugowania, przeprowadzania testów, a także implementacji. Niestety zostały na dysku w szkole, lecz były przez Pana sprawdzone. 
+
+ 
+
+Podsumowanie: 
+
+Projekt "StreetVibes" ma na celu stworzenie podstaw strony internetowej, która w przyszłości może funkcjonować jako sklep internetowy. Harmonogram projektu obejmuje etapy od integracji z użytkownikiem po 
+finalną implementację, z naciskiem na czysty kod, testowanie i debugowanie. Zakres obejmuje budowę interfejsu użytkownika, implementację funkcjonalności sklepu oraz testowanie i finalizację projektu. 
+Priorytetem jest poprawa doświadczenia użytkownika i zapewnienie stabilności oraz wydajności strony internetowej. (Zapisanie pobieranych danych od użytkowników (email, hasło, nazwa) będzie możliwe za pomocą 
+bazy danych i php, jak tylko moja wiedza się poszerzy. (Czyli jak najszybciej)).

@@ -1,31 +1,6 @@
 let currentProducts = products;
 let categories = new Set();
-let basket = [];
-let addToBasketButtons;
 const productsSection = document.querySelector(".products");
-
-const addToBasket = (e) => {
-  const selectedId = parseInt(e.target.dataset.id);
-  const selectedProduct = currentProducts.find(product => product.id === selectedId);
-
-  const productToAdd = {
-    id: selectedProduct.id,
-    name: selectedProduct.name,
-    price: selectedProduct.sale ? (selectedProduct.price - selectedProduct.saleAmount) : selectedProduct.price
-  };
-
-  basket.push(productToAdd);
-
-  const basketTotal = basket.reduce((sum, product) => {
-    return (sum += product.price);
-  }, 0);
-
-  basketTotal > 0
-    ? basketClearBtn.classList.add("active")
-    : basketClearBtn.classList.remove("active");
-
-  basketAmountSpan.innerHTML = `${basketTotal.toFixed(2)} zł`;
-};
 
 const renderProducts = (items) => {
   productsSection.innerHTML = "";
@@ -36,25 +11,14 @@ const renderProducts = (items) => {
     <img src="${items[i].image}" alt="product-image" />
     <p class="product-name">${items[i].name}</p>
     <p class="product-description">
-   ${items[i].description}
+      ${items[i].description}
     </p>
     <div class="product-price">
-    <span class="price">${items[i].price.toFixed(2)} zł</span>
-    <span class="price-sale">${(items[i].price - items[i].saleAmount).toFixed(
-      2
-    )} zł</span>
-    </div>
-    <button data-id="${
-      items[i].id
-    }" class="product-add-to-basket-btn">Dodaj do koszyka</button>
-<p class="product-item-sale-info">Promocja</p>`;
-
+      <span class="price">${items[i].price.toFixed(2)} zł</span>
+      <span class="price-sale">${(items[i].price - items[i].saleAmount).toFixed(2)} zł</span>
+    </div>`;
     productsSection.appendChild(newProduct);
   }
-  addToBasketButtons = document.querySelectorAll(".product-add-to-basket-btn");
-  addToBasketButtons.forEach((btn) =>
-    btn.addEventListener("click", addToBasket)
-  );
 };
 
 const renderCategories = (items) => {
@@ -123,7 +87,6 @@ searchBarInput.addEventListener("input", (e) => {
   renderProducts(foundProducts);
 });
 
-const basketAmountSpan = document.querySelector(".basket-amount");
 const basketClearBtn = document.querySelector(".basket-clear-btn");
 
 const clearBasket = () => {

@@ -57,6 +57,19 @@
             color: blue;
             text-decoration: underline;
         }
+
+        /* Dodano nowe style */
+        #skip-button {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            padding: 10px;
+            background-color: #333;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
     </style>
 </head>
 <body>
@@ -98,35 +111,40 @@
                 placeholder="Password"
             />
 
-            <!-- Prosty przycisk logowania -->
+            <!-- Prosty przycisk rejestracji -->
             <button class="form__button" type="submit">Sign up</button>
         </form>
+
+        <!-- Przycisk "Skip" -->
+        <button id="skip-button" onclick="skipToPage()">Skip</button>
+    </div>
 
     <script>
         // Przechowywanie danych użytkowników
         const users = {};
 
         function auth() {
-            // Pobierz dane z formularza logowania
+            // Pobierz dane z formularza rejestracji
             var email = document.getElementById('email').value;
             var username = document.getElementById('user').value;
             var password = document.getElementById('password').value;
 
-            // Sprawdź, czy użytkownik istnieje
-            if (email === 'qualnexttime@gmail.com' && username === 'Username' && password === 'Password') {
-                // Zalogowano pomyślnie - przekieruj na inną stronę (np. 'tlo1.html')
-                alert('Login Successfully');
+            // Sprawdź, czy pola nie są puste
+            if (email !== '' && username !== '' && password !== '') {
+                // Zarejestrowano pomyślnie - przekieruj na inną stronę (np. 'tlo1.html')
+                alert('Registered Successfully');
                 window.location.href = 'index.html';
             } else {
-                // Błąd logowania
-                alert('Nieprawidłowe dane logowania. Spróbuj ponownie.');
+                // Błąd rejestracji
+                alert('Nieprawidłowe dane rejestracji. Wypełnij wszystkie pola.');
             }
         }
 
-        function redirectToSignup() {
-            // Przekieruj na stronę rejestracji (np. 'signup.html')
-            window.location.href = 'signup.html';
+        function skipToPage() {
+            // Przekieruj na inną stronę (np. 'index.html') bez logowania lub rejestracji
+            window.location.href = 'index1.html';
         }
     </script>
+	
 </body>
 </html>
